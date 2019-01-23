@@ -163,22 +163,37 @@ Humanoid.prototype.greet = function () {
 
   Hero.prototype = Object.create(Humanoid.prototype);
 
-const mOJO = new Villain ({
+const goetia = new Villain ({
   createdAt: new Date(),
   dimensions: {
-    height: 5
+    height: 100
   },
-  healthPoints: 100,
-  name: "MOJO",
-  team: "Monkey",
-  weapons: "Polearm",
-  language: "MONKAY",
+  healthPoints: 150,
+  name: "GOETIA, The Demon Beast",
+  team: "Demon",
+  weapons: "Claws",
+  language: "Classified",
   aura: "Dark",
-  power: "SUPERDUPER SMASH"
+  power: "DARK DIMENSION"
 });
 
-console.log(mOJO);
+// console.log(goetia);
   
+const gilgamesh = new Hero ({
+  createdAt: new Date(),
+  dimensions: {
+    height: 6
+  },
+  healthPoints: 100,
+  name: "Gilgamesh, King of Heroes",
+  team: "Divine",
+  weapons: "Ea",
+  language: "Babylonian",
+  aura: "Light",
+  power: "Enuma Elish"
+});
+
+console.log(gilgamesh);
 
   // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
   // * Create two new objects, one a villain and one a hero and fight it out with methods!
