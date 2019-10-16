@@ -35,7 +35,8 @@ function Pokemons(pokemon) {
     this.name = pokemon.name,
     this.gen = pokemon.gen,
     this.type = pokemon.type,
-    this.region = pokemon.region
+    this.region = pokemon.region,
+    this.evolution =  pokemon.evolution
    };
 
    const charmander = new Pokemons({
@@ -43,6 +44,7 @@ function Pokemons(pokemon) {
        gen: 1,
        type: "Fire",
        region: "Kanto",
+       evolution: "Charmeleon "
    });
 
    console.log(charmander);
@@ -53,7 +55,8 @@ function Pokemons(pokemon) {
 
 function Trainers (trainer) {
     Pokemons.call(this, trainer);
-    this.level =trainer.level;
+    this.level = trainer.level;
+    this.trainer_name  = trainer.trainer_name
 };
 
 const bulbasaur = new Trainers({
@@ -61,7 +64,9 @@ const bulbasaur = new Trainers({
     gen: 1,
     type: "Grass",
     region: "Kanto",
+    evolution: "Ivysaur",
     level: 15,
+    trainer_name: "Young Joey"
 });
 
 console.log(bulbasaur);
